@@ -1,0 +1,29 @@
+spring:
+  profile: default
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: 123456789
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+logging:
+  level:
+    root: INFO
+    com.spring.boot.api: DEBUG
+
+authorize:
+  username: admin
+  password: password
+
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-store-type: jks
+    key-store: classpath:keystore/keystore.jks
+    key-store-password: changeit
+    key-alias: api-keystore
