@@ -9,6 +9,12 @@ import javax.persistence.GeneratedValue;
 import lombok.Getter;
 import lombok.Setter;
 
+/**
+ * Class to define structure of User
+ *
+ * @author Vishwajit
+ */
+
 @Entity
 @Table(name = "user")
 @Getter
